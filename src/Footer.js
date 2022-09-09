@@ -62,7 +62,6 @@ const Footer = () => {
                         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">subscribe to our newsletter</h2>
                         <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                             <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                                {/* <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label> */}
                                 <input type="text" id="footer-field" name="footer-field" class="sm:mb-8 w-full bg-gray-100 rounded border-2 border-gray-300 focus:bg-transparent text-base mb-0 text-black py-1 px-3 leading-8" />
                             </div>
                             <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Subscribe</button>
