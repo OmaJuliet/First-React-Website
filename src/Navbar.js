@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="#blogs" className="navbar-link"><li>Blogs</li></a>
         </ul>
 
-        <a href="#contact" className='links' id="btn">
+        <a href="" className='links' id="btn">
           <span>Contact Us</span>
         </a>
     </nav>
