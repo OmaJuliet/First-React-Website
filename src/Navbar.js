@@ -19,10 +19,10 @@ const Navbar = () => {
           {toggle?<p className="menu-close">X</p>:<FaBars />}
         </div>
         <ul className='links'>
-          <a href="#" id="active"><li>Home</li></a>
-          <a href="#about" className="navbar-link"><li>About</li></a>
-          <a href="#features" className="navbar-link"><li>Features</li></a>
-          <a href="#blogs" className="navbar-link"><li>Blogs</li></a>
+          <p id="active"><li>Home</li></p>
+          <p className="navbar-link"><li>About</li></p>
+          <p className="navbar-link"><li>Features</li></p>
+          <p className="navbar-link"><li>Blogs</li></p>
         </ul>
 
         <a href="" className='links' id="btn">

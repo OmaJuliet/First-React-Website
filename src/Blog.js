@@ -13,7 +13,7 @@ const Blog = () => {
 
 
     return (
-        <section className="text-black body-font" id="blogs">
+        <section className="text-black body-font">
             <div className="flex flex-col text-center w-full mb-2">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-0 text-gray-900">Blog Posts</h1>
             </div>
