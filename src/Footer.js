@@ -11,16 +11,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">navigate</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Home</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Home</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">About</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">About</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Features</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Features</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Blogs</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Blogs</p>
                             </li>
                         </nav>
                     </div>
@@ -28,16 +28,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">our services</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 1</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 1</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 2</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 2</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 3</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 3</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 4</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Service 4</p>
                             </li>
                         </nav>
                     </div>
@@ -45,16 +45,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">contact us</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Phone: +234 8012345678</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Phone: +234 8012345678</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Email: info@company.com</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Email: info@company.com</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Duo: +234 819876543</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Duo: +234 819876543</p>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Location: Lagos, Nigeria</a>
+                                <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Location: Lagos, Nigeria</p>
                             </li>
                         </nav>
                     </div>
@@ -71,15 +71,15 @@ const Footer = () => {
             </div>
             <div className="">
                 <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <p className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <span className="text-xl cursor-pointer">Company Name</span>
-                    </a>
+                    </p>
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">Copyright © || 2022</p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                        <a href=""><FaTwitter/></a>
-                        <a href="" className="ml-3"><FaInstagram/></a>
-                        <a href="" className="ml-3"><FaLinkedin/></a>
-                        <a href="" className="ml-3"><FaFacebook/></a>
+                        <p><FaTwitter/></p>
+                        <p className="ml-3"><FaInstagram/></p>
+                        <p className="ml-3"><FaLinkedin/></p>
+                        <p className="ml-3"><FaFacebook/></p>
                     </span>
                 </div>
             </div>

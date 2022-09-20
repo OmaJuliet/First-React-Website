@@ -7,7 +7,7 @@ const Blog = () => {
     const [blogs] = useState([
         { title: 'Blog Post 1', details: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur voluptatem, molestias consequuntur excepturi architecto facilis....", image: "images/image2.jpg", views: "12k", comment: "10k", id: 1 },
         { title: 'Blog Post 2', details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s....", image: "images/image3.jpg", views: "10k", comment: "7k", id: 2 },
-        { title: 'Blog Post 3', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.....", image: "images/image4.jpg", views: "5k", comment: "980", id: 3 }
+        { title: 'Blog Post 3', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it.....", image: "images/image4.jpg", views: "5k", comment: "980", id: 3 }
     ])
 
 
@@ -28,8 +28,8 @@ const Blog = () => {
                                         <h1 className="title-font text-xl font-semibold text-gray-900 mb-3">{blog.title}</h1>
                                         <p className="leading-relaxed mb-3">{blog.details}</p>
                                         <div className="flex items-center flex-wrap ">
-                                            <a className="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">Learn More
-                                            </a>
+                                            <p className="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">Learn More
+                                            </p>
                                             <span className="text-black mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 cursor-pointer">
                                                 <FaEye className="w-4 h-4 mr-1" /> {blog.views}
                                             </span>
