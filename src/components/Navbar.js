@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
+
+import { UserAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -16,6 +21,19 @@ const Navbar = () => {
   //   setNav(!nav);
   // };
 
+  const { logout } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+        await logout();
+        navigate('/login');
+        console.log('You are logged out')
+    } catch (e) {
+        console.log(e.message);
+    }
+};
+
 
   return (
 
@@ -27,9 +45,9 @@ const Navbar = () => {
       <ul className='links'>
         <Link to="/home" className="navbar-link"><li>Home</li></Link>
         <Link to="/about" className="navbar-link"><li>About</li></Link>
-        <Link to="/features" className="navbar-link"><li>Features</li></Link>
+        {/* <Link to="/features" className="navbar-link"><li>Features</li></Link> */}
         <Link to="/blogs" className="navbar-link"><li>Blogs</li></Link>
-        <Link to="/login" className="navbar-link"><li>Logout</li></Link>
+        <Link to="/login" onClick={handleLogout} className="navbar-link"><li>Logout</li></Link>
       </ul>
 
       <p className='links' id="btn">

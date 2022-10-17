@@ -4,7 +4,11 @@ import pic from "../images/about.jpg";
 import pics from "../images/about2.jpg";
 import picture from '../images/image2.jpg';
 import { FaArrowUp, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { Link }  from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
+// import { useNavigate } from 'react-router-dom';
+import { UserAuth } from '../context/AuthContext';
 
 
 const Home = () => {
@@ -18,12 +22,19 @@ const Home = () => {
         setBtnContent(!btnContent)
     }
 
+
+
+    const { user } = UserAuth();
+    // const navigate = useNavigate();
+
+
     return (
         <>
-        <Navbar />
+            <Navbar />
 
             {/* Hero section */}
             <section className="body-font mt-0 lg:mt-0" id="top">
+                <h2 className="flex items-center"> Welcome {user && user.email}</h2>
                 <div className="container mx-auto flex px-5 py-12 md:py-0 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-2 md:mb-0 items-center text-center">
                         <h1 className="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-900">Housing Agency.
@@ -31,7 +42,7 @@ const Home = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur voluptatem, molestias consequuntur excepturi architecto facilis reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur voluptatem, molestias consequuntur excepturi architecto facilis reiciendis.</p>
                         <div className="flex justify-center">
-                            <Link to="/signup"><button className="btn">Sign Up</button></Link>
+                            <Link to="/signup"><button className="btn">Book a session</button></Link>
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -95,13 +106,13 @@ const Home = () => {
                                     <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Home</p>
                                 </li>
                                 <li>
-                                    <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">About</p>
+                                    <Link to="/about"><p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">About</p></Link>
                                 </li>
                                 <li>
-                                    <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Features</p>
+                                    <Link to="/features"><p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Features</p></Link>
                                 </li>
                                 <li>
-                                    <p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Blogs</p>
+                                    <Link to="/blogs"><p className="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Blogs</p></Link>
                                 </li>
                             </nav>
                         </div>

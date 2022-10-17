@@ -191,14 +191,14 @@
   right: 15px;
   background-color: cornflowerblue;
   color: white;
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 1.4rem;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: -3px 3px 15px hsla(219, 94%, 58%, 0.5);;
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transition: 0.15s ease;
+  transition: 0.1s ease;
 }
 
 .go-to-top.active {
