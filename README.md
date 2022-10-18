@@ -6,7 +6,7 @@ This is a static Reactjs website. This was built to practise the use of some Rea
 
 
 ## Frontend Interface of the website
-<!-- ![Static Site UI](design.png)  -->
+![Static Site UI](UI.png) 
 
 
 ## Technologies 
