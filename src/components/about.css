@@ -1,12 +1,37 @@
+.popup-texts {
+    margin-top: 5rem;;
+}
+
+.popup-texts h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: black;
+}
+
 body.active-modal {
     overflow-y: hidden;
 }
 
 .btn-modal {
-    padding: 10px 20px;
+    padding: 5px 15px;
     display: block;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
+    color: #fff;
     font-size: 18px;
+    background-image: linear-gradient(90deg, hsl(241, 87%, 61%), hsl(206, 91%, 72%));
+    background-size: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 15px 0;
+    transition: 0.35s ease;
+}
+
+.btn-modal:hover {
+    font-size: 1.2rem;
+    background-image: linear-gradient(90deg, hsl(241, 91%, 57%), hsl(206, 99%, 67%));
 }
 
 .modal, .overlay {
@@ -19,12 +44,29 @@ body.active-modal {
     position: fixed;
 }
 
-.overlay {
-    background: rgba(49,49,49,0.8);
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
 }
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+
+.overlay {
+    background: rgba(68, 68, 68, 0.8);
+}
+
 .modal-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
@@ -37,8 +79,12 @@ body.active-modal {
 
 .close-modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 2px;
     padding: 5px 7px;
 }
 
+
+.texts {
+    padding: 3% 10% 1% 10%;
+}

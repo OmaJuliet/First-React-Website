@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import { FaEye, FaComments } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 
 const Blog = () => {
     const [blogs] = useState([
-        { title: 'Blog Post 1', details: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur voluptatem....", image: "images/image2.jpg", views: "12k", comment: "10k", id: 1 },
-        { title: 'Blog Post 2', details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ....", image: "images/image3.jpg", views: "10k", comment: "7k", id: 2 },
-        { title: 'Blog Post 3', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.....", image: "images/image4.jpg", views: "5k", comment: "980", id: 3 }
+        { title: 'Blog Post 1', details: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur voluptatem....", image: "images/gallery1.jpg", views: "12k", comment: "10k", id: 1 },
+        { title: 'Blog Post 2', details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ....", image: "images/gallery2.jpg", views: "10k", comment: "7k", id: 2 },
+        { title: 'Blog Post 3', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.....", image: "images/image4.jpg", views: "5k", comment: "980", id: 3 },
+        { title: 'Blog Post 4', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.....", image: "images/gallery3.jpg", views: "1k", comment: "480", id: 4 },
+        { title: 'Blog Post 5', details: "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.....", image: "images/gallery4.jpg", views: "3k", comment: "570", id: 5 }
     ])
 
 
@@ -18,7 +21,7 @@ const Blog = () => {
 
             <section className="text-black body-font mt-4">
                 <div className="flex flex-col text-center w-full mb-2">
-                    <h1 className="sm:text-2xl text-xl font-medium title-font mb-0 text-gray-900">Blog Posts</h1>
+                    <h1 className="sm:text-xl text-lg font-medium title-font mb-0 text-gray-900">Blog Posts</h1>
                 </div>
                 <div className="container px-5 py-8 mx-auto">
 
@@ -47,6 +50,7 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

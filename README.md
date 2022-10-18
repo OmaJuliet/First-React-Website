@@ -13,9 +13,11 @@ This is a static Reactjs website. This was built to practise the use of some Rea
 
 - React.js
 - Tailwindcss
-- React-icons
 - Firebase
 - Auth-Context
+- React Toastify
+- Framer Motion
+- React-icons
 
 
 
@@ -27,7 +29,6 @@ Here are some of the links you should look out for to make navigation on the sit
 - Home
 - About
 - Blogs
-- Features
 
 
 <!-- THE PRODUCT LINK -->
